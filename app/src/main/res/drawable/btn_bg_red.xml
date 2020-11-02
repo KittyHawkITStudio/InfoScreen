@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+       
+    <item android:drawable="@drawable/btn_normal_red"
+	      android:state_enabled="true"
+	      android:state_pressed="false"/>
+    
+	<item android:drawable="@drawable/btn_disabled"
+	      android:state_enabled="false"/>
+    
+ 	
+	<item android:drawable="@drawable/btn_pressed" 
+	      android:state_enabled="true"
+          android:state_pressed="true"/>
+	
+</selector>
+

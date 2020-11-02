@@ -1,0 +1,336 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal" >
+
+    <!--left side-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/color_dark_gray"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lyTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/color_dark_gray"
+        android:padding="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@drawable/color_white"
+            android:textSize="40sp"
+            android:text="时间" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@drawable/color_white"
+            android:textSize="40sp"
+            android:text="温度" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@drawable/color_white"
+            android:textSize="40sp"
+            android:text="湿度" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lvDetects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/color_white" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/color_white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDateStart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:text="-" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:text="~" />
+
+            <TextView
+                android:id="@+id/tvDateEnd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:text="-" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="-"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btnQueryRecord"
+                style="@style/Button"
+                android:background="@drawable/btn_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="查询" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/Button"
+                android:background="@drawable/btn_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="清空记录" />
+
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+    <!--right side-->
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/color_white"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="80sp"
+                android:text="导出月度温湿度记录" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="50sp"
+                android:text="月份" />
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textSize="50sp"
+                android:text="-"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:orientation="horizontal"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="报告时间点设置：" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:scrollbars="vertical">
+
+            <CheckBox android:id="@+id/cbx0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="0时"/>
+            <CheckBox android:id="@+id/cbx1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="1时"/>
+            <CheckBox android:id="@+id/cbx2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="2时"/>
+            <CheckBox android:id="@+id/cbx3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="3时"/>
+            <CheckBox android:id="@+id/cbx4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="4时"/>
+            <CheckBox android:id="@+id/cbx5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="5时"/>
+            <CheckBox android:id="@+id/cbx6" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="6时"/>
+            <CheckBox android:id="@+id/cbx7" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="7时"/>
+            <CheckBox android:id="@+id/cbx8" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="8时"/>
+            <CheckBox android:id="@+id/cbx9" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="9时"/>
+            <CheckBox android:id="@+id/cbx10" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="10时"/>
+            <CheckBox android:id="@+id/cbx11" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="11时"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:scrollbars="vertical">
+
+            <CheckBox android:id="@+id/cbx12" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="12时"/>
+            <CheckBox android:id="@+id/cbx13" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="13时"/>
+            <CheckBox android:id="@+id/cbx14" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="14时"/>
+            <CheckBox android:id="@+id/cbx15" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="15时"/>
+            <CheckBox android:id="@+id/cbx16" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="16时"/>
+            <CheckBox android:id="@+id/cbx17" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="17时"/>
+            <CheckBox android:id="@+id/cbx18" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="18时"/>
+            <CheckBox android:id="@+id/cbx19" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="19时"/>
+            <CheckBox android:id="@+id/cbx20" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="20时"/>
+            <CheckBox android:id="@+id/cbx21" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="21时"/>
+            <CheckBox android:id="@+id/cbx22" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="22时"/>
+            <CheckBox android:id="@+id/cbx23" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="23时"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="40dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btnExportRecord"
+                style="@style/Button"
+                android:background="@drawable/btn_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="导出温湿度记录报告" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/Button"
+                android:background="@drawable/btn_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="返回" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_dlg_detect_info"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/vict_red">
+
+<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+ 		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			style="@style/DialogTitle"
+			android:text="@string/select_date"/>
+</LinearLayout>
+
+<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/white"
+		android:orientation="vertical">
+	
+    	<DatePicker
+          android:id="@+id/datepicker"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+			android:layout_weight="1"
+          android:background="@drawable/color_white"
+
+          android:calendarViewShown="false"/>
+
+	<Spinner
+		android:id="@+id/spHour"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.2"
+		android:visibility="visible"/>
+	
+</LinearLayout>
+
+<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+	
+	<Button
+		android:id="@+id/btn_datepicker_ok"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@style/Button"
+		android:background="@drawable/btn_bg"
+		android:text="@string/ok"/>
+	
+</LinearLayout>
+
+</LinearLayout>

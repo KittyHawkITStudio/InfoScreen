@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">信息显示屏</string>
+
+    <string name="module_realtime_data">实时\n数据</string>
+    <string name="module_alert_data">报警\n显示</string>
+    <string name="module_query">数据\n查询</string>
+    <string name="module_about_us">公司\n简介</string>
+
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_no">您的版本已为最新版本</string>
+    <string name="soft_update_info">检测到新版本，是否更新？</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+
+    <string name="copyright_info">© 贵州西南水泥有限公司</string>
+    <string name="about_us">西南水泥有限公司（简称“西南水泥”）是中国建材股份有限公司（香港上市公司代码HK3323）新设立的控股子公司，是中国建筑材料集团有限公司（中央企业、世界500强企业之一）实施“大水泥”区域化战略的又一重大决策，是继成立中国联合水泥集团有限公司、南方水泥有限公司、北方水泥有限公司之后组建的又一个大型专业化水泥公司。西南水泥于2011年12月12日在成都注册成立，注册资本金100亿元，计划水泥产能规模为1亿吨/年以上，并将组建重庆、四川、云南、贵州“一市三省”区域水泥有限公司。公司将秉承“善用资源、服务建设”的核心理念和“创新、绩效、和谐、责任”的核心价值观，努力创建“创新绩效型、资源节约型、环境友好型、社会责任型”的“四型”企业，着力发展成为中国水泥行业规模领先、技术先进、管理优秀、效益一流的专业化水泥公司。核心理念：善用资源 服务建设
+   </string>
+
+  <string name="D1_ZH">分解炉温度</string>
+  <string name="D2_ZH">窑投料量</string>
+  <string name="D3_ZH">窑头用煤量</string>
+  <string name="D4_ZH">脱销喷氨量</string>
+  <string name="D5_ZH">氧含量</string>
+  <string name="D6_ZH">窑尾颗粒物</string>
+  <string name="D7_ZH">氮氧化物</string>
+  <string name="D8_ZH">二氧化硫</string>
+  <string name="D9_ZH">窑头颗粒物</string>
+
+     <!--
+    <string name="copyright_info"></string>
+    -->
+    <string name="data_query_local">历史记录（本机）</string>
+    <string name="data_query_remote">历史记录（平台）</string>
+    <string name="data_local">本机记录</string>
+    <string name="data_remote">平台记录</string>
+    <string name="data_safety">数据安全</string>
+    <string name="dict">字典</string>
+    <string name="dict_supervisor">监管人员</string>
+    <string name="dict_phrase">常用语</string>
+    <string name="config">设置</string>
+    <string name="version_info">版本</string>
+    <string name="exit">退出</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="save_password">记住密码</string>
+    <string name="detect_unit">检测单位</string>
+    <string name="detect_unit_m">检测单位：</string>
+    <string name="detect_unit_id">检测单位ID</string>
+    <string name="detect_unit_id_m">检测单位ID：</string>
+    <string name="upload_url">上传路径</string>
+    <string name="upload_url_m">上传路径：</string>
+    <string name="if_image_crop">拍照后图像是否裁剪</string>
+    <string name="if_image_crop_m">拍照后图像是否裁剪：</string>
+    <string name="if_no_memory">样本编号是否记忆</string>
+    <string name="if_no_memory_m">样本编号是否记忆：</string>
+    <string name="if_hint_before_save">保存前是否提示</string>
+    <string name="if_hint_before_save_m">保存前是否提示：</string>
+    <string name="if_upload_include_image">上传记录同时上传图像</string>
+    <string name="if_upload_include_image_m">上传记录同时上传图像：</string>
+    <string name="hintYes">提示</string>
+    <string name="hintNo">不提示</string>
+    <string name="hint">提示</string>
+    <string name="image">图像</string>
+    <string name="image_m">图像：</string>
+    <string name="name">名称</string>
+    <string name="name_m">名称：</string>
+    <string name="name_of_people">姓名</string>
+    <string name="name_of_people_m">姓名：</string>
+    <string name="content_m">内容：</string>
+    <string name="signature">签名</string>
+    <string name="resultdx_bad_zh">阳性</string>
+    <string name="resultdx_good_zh">阴性</string>
+    <string name="resultdx_doubt_zh">疑似阳性</string>
+    <string name="export_db">导出数据库</string>
+    <string name="export_excel">导出表格</string>
+    <string name="import_db">导入数据库</string>
+
+    <!-- 界面功能区 -->
+    <string name="loginin">登录</string>
+    <string name="shoot">拍摄</string>
+    <string name="close">关闭</string>
+    <string name="sure">确定</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="confirm">确认</string>
+    <string name="back">返回</string>
+    <string name="upload">上传</string>
+    <string name="export">导出</string>
+    <string name="importA">导入</string> <!-- import是关键字，不能用 -->
+    <string name="clear">清空</string>
+    <string name="add_ico">+</string>
+    <string name="add">添加</string>
+    <string name="edit">修改</string>
+    <string name="delete">删除</string>
+    <string name="query">查询</string>
+    <string name="yes">是</string>
+    <string name="not">否</string>
+    <string name="prevPage">上一页</string>
+    <string name="nextPage">下一页</string>
+    <string name="current_version_m">当前版本：</string> <!-- 带m表示有冒号 -->
+
+    <string name="select_date">选择日期</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="dash_en">-</string>
+    <string name="dash_zh">—</string>
+    <string name="detail">详情</string>
+
+  <!-- colors, this project -->
+   <drawable name="p_green">#88C0BD</drawable>
+   <drawable name="p_blue">#355AE6</drawable>
+   <drawable name="p_yellow">#E8BE47</drawable>
+   <drawable name="p_grey">#B9B9B9</drawable>
+   <drawable name="p_orange">#EB8729</drawable>
+
+    <!-- colors, from microsoft -->
+    <drawable name="color_main">@drawable/color_blue</drawable>
+    <drawable name="color_blue">#2B579A</drawable>
+    <drawable name="color_green">#217346</drawable>
+    <drawable name="color_light_green">#99FF33</drawable>
+    <drawable name="color_red">#B7472A</drawable>
+    <drawable name="color_gray">#C0C0C0</drawable>
+    <drawable name="color_dark_gray">#666666</drawable>
+    <drawable name="color_very_dark_gray">#13202B</drawable>
+    <drawable name="color_white">#FFFFFF</drawable>
+    <drawable name="color_black">#000000</drawable>
+    <drawable name="color_light_blue">#0099FF</drawable>
+    <drawable name="color_gold">#F0AB00</drawable>
+    <!-- <drawable name="view_bg_pressed">#CCCCCC</drawable>-->
+    <drawable name="color_cyan">#516E90</drawable>
+    <drawable name="color_light_gray">#DCDFE2</drawable>
+    <drawable name="cccc">#d004facd</drawable>
+    <drawable name="color_dict">#2CA3F4</drawable>
+    <drawable name="color_config">#FF6F58</drawable>
+
+
+    <!-- 颜色 -->
+    <drawable name="vict_green">#217346</drawable>
+    <drawable name="vict_blue">#2B579A</drawable>
+    <drawable name="vict_red">#B7472A</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="gray_dark">#555555</drawable>
+    <drawable name="gray">#999999</drawable>
+    <drawable name="gray_light">#EEEEEE</drawable>
+    <drawable name="bad">#D9534F</drawable>
+    <drawable name="good">#1FA065</drawable>
+    <drawable name="doubt">#F0AD4E</drawable>
+    <drawable name="disabled">#E5E5E5</drawable>
+    <drawable name="view_bg_normal">#FFFFFF</drawable>
+    <drawable name="view_bg_pressed">#91D0B4</drawable>
+    <drawable name="view_bg_normal_main">#FFFFFF</drawable>
+    <drawable name="view_bg_pressed_main">#CCCCCC</drawable>
+    <drawable name="btn_bg_normal">@drawable/vict_red</drawable>
+    <drawable name="btn_bg_normal_red">@drawable/vict_red</drawable>
+    <drawable name="btn_bg_normal_blue">@drawable/vict_blue</drawable>
+    <drawable name="btn_bg_pressed">#CCCCCC</drawable>
+    <drawable name="btn_bg_disabled">#DDDDDD</drawable>
+    <drawable name="button_text_normal">#FFFFFF</drawable>
+    <drawable name="button_text_pressed">#000000</drawable>
+
+  <drawable name="color_alarm_red">#FFCCCC</drawable>
+  <drawable name="color_alarm_green">#E5FFCC</drawable>
+
+</resources>
