@@ -1,1 +1,1 @@
-FAS：Factory Auto Supervise 工厂自动化监控
+环境信息显示屏。云南网企科技。
